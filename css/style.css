@@ -1,0 +1,160 @@
+.container {
+    width: min(100%, 1440px);
+    margin: auto;
+}
+
+/* task 1 */
+
+.btn {
+    background: rgba(222, 81, 203, 0.64);
+    padding: 1px;
+}
+
+button {
+    display: block;
+    margin: 100px auto;
+    background: rgba(222, 81, 203, 0.64);
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    text-shadow: 4px 5px 4px black;
+    box-shadow: 4px 4px 4px black, inset 4px 4px 4px white;
+}
+
+button:active {
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 4px 4px 4px white, inset 4px 4px 4px black;
+}
+
+/* task 2 */
+
+.sec_task2 {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.task2 {
+    padding: 20px;
+    width: 340px;
+    transition-duration: 1s;
+}
+
+.task2 img {
+    height: 300px;
+    width: 300px;
+    transition-duration: 1s;
+}
+
+.task2 img:hover {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.task2:hover {
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px 0 rgb(245, 5, 5), -5px -5px 15px 0 rgb(245, 5, 5);
+}
+
+/* task 3 */
+
+.task3 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    text-size-adjust: 140px;
+}
+
+.tig {
+    color: red;
+    font-size: 140px;
+    letter-spacing: 20px;
+    animation: flashing 0.5s infinite;
+}
+
+@keyframes flashing {
+    0% {
+      text-shadow: 0 0 0 red;
+    }
+    25% {
+      text-shadow: 0 0 15px rgb(238, 184, 10);
+    }
+    50% {
+      text-shadow: 0 0 35px rgb(200, 175, 11);
+    }
+    85% {
+      text-shadow: 0 0 55px green;
+    }
+    100% {
+      text-shadow: 0 0 75px greenyellow;
+    }
+  }
+
+  /* task4 */
+
+  .task4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+  }
+
+  .task4 div {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border-width: 30px;
+    border-style: solid;
+    border-color: rgb(245, 5, 5) rgb(5, 12, 221) rgb(5, 12, 221) rgb(25, 248, 0);
+    animation: spin 1s linear infinite;
+  }
+
+  .task4 p {
+    position: absolute;
+    font-size: 40px;
+    color: rgb(250, 14, 37);
+    font-weight: bold;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .task4 div:hover {
+    animation-play-state: paused;
+  }
+
+  
+  /* task5 */
+
+  header {
+    display: flex;
+    background-color: rgb(217, 158, 245);
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header ul li a {
+    font-size: 50px;
+    color: rgb(254, 254, 254);
+    text-shadow: 2px 2px 2px black;
+    transition-duration: 1s;
+  }
+  
+  header ul li a:hover {
+    text-shadow: 0 0 20px rgb(245, 5, 5), 0 0 50px rgb(245, 5, 5),
+      0 0 70px rgb(245, 5, 5), 0 0 90px rgb(245, 5, 5);
+  }
